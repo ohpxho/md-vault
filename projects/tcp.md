@@ -1,19 +1,7 @@
-TCP
-===
+# TCP
 
-The goal is to implement TCP, specifically, **RFC-793** with using C. 
+The goal is to implement TCP, specifically, **RFC-793** with using C.
 
-Why do I want to build this from scratch? 
-> It's fun! 
+Why do I want to build this from scratch?
 
-
-
-
-
-
-
-
-
-
-
-
+> It's fun!
