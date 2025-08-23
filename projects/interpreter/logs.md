@@ -51,4 +51,37 @@ strncpy(substr, src, substrLen);
 ## Implementing isAtEnd function
 > This returns if current chracter is the end of the source.
 
+# Dev Logs - Aug 23, 2025
+
+## Implementing  match function
+- This function tell us if expected character matches the current character
+- I just need to compare the expected character with `current` value since its value is incremented already
+- I built this function initially with two characters as parameter: src, expected, but, this is incorrect
+- Since the moment the characters matched, it needs to be consumed so I gonna need to increment the `current` pointer. If I put it inline the scanning function, it's just makes the condition larger so I put it inside the match function just like the sample in the book.
+
+```
+bool match(Scanner *scanner, char *expected) {
+  if(isAtEnd(scanner)) return false;
+  if(!scanner->source[current] == expected) return false;
+
+  current++;
+  return true;
+}
+
+```
+
+## Implmenting peek function
+- It just return the current character
+- Easy
+
+
+```
+char peek(Scanner *scanner) {
+  if(isAtEnd(scanner)) return '\0';
+  return scanner->source[current];
+}
+```
+
+## Dealing with comments
+- This one is kinda tricky, since everything in line with `//` will be a comment and should be ignored
 
