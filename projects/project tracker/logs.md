@@ -21,4 +21,9 @@
 ## TODO
 ## onClick in the kanban card is not triggering
 > Tried adding onClick prop in the KanbanCard implementation, but this doesn't work either.
- 
+
+# Dev Logs - Aug 23, 2025
+
+## onClick in the kanban card is not triggering
+- I tried wrapping the content of the Card into div then include an onClick event, but it still not triggering
+- 
