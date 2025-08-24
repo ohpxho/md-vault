@@ -81,7 +81,24 @@ char peek(Scanner *scanner) {
   return scanner->source[current];
 }
 ```
-
 ## Dealing with comments
 - This one is kinda tricky, since everything in line with `//` will be a comment and should be ignored
 
+
+# Dev Logs - Aug 24, 2025
+## Implementing string function
+- When a `"` is encountered, it means the next part is a string. I need to store everything inside the quotes as string in a token
+- In case that the string is unterminated throw an error 
+
+## Implementing number function
+- Valid numbers:
+    - 1234
+    - 12.34
+- Invalid numbers:
+    - .123
+    - 123.
+`All numbers in lox is floating point in runtime`
+
+## Dealing with reserve keywords
+- Refers to and, or, class, etc
+- `Maximal Munch`, a principle where whoever matches the most character wins
