@@ -22,7 +22,6 @@ The act of remembering something is inherently time-dependent
 
 ### What is a flip-flop
 - The most elementary sequential element
-- 
 
 ## Others 
 
