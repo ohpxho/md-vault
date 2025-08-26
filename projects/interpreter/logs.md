@@ -99,6 +99,22 @@ char peek(Scanner *scanner) {
     - 123.
 `All numbers in lox is floating point in runtime`
 
-## Dealing with reserve keywords
-- Refers to and, or, class, etc
-- `Maximal Munch`, a principle where whoever matches the most character wins
+
+# Dev Logs - Aug 25, 2025
+## Implmenting a literal function
+- A function for identifying keywords
+- In the book, it uses hashmap, but since it's in C there are no built in hashmap so I opt to if-else ladder
+
+## Problem with adding token with literals
+- I misunderstand lexem and literal, I thought they are the same. 
+- For literals the `lexeme` and `literal` had the same value 
+
+
+
+
+
+
+
+
+
+

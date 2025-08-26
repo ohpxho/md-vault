@@ -104,3 +104,12 @@ padding = 3 bytes
 - allocation by default is stored in stack
 - use `malloc` for heap allocations
 
+## Limitation of switch
+- It only works on integral types, so doing strings in switch, it will not compile
+
+# C Notes - Aug 26, 2025
+```
+char **str
+```
+- This declation allows you to change the value in the original pointer pass to this.
+- This will not create a local copy 
