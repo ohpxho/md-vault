@@ -113,3 +113,28 @@ char **str
 ```
 - This declation allows you to change the value in the original pointer pass to this.
 - This will not create a local copy 
+
+# C Notes - Aug 31, 2025
+## Struct Initializer
+- A method of initliazing values of a defined struct
+- Two styles:
+    - **Position Initializer**:
+        ```
+        struct Point {
+            int x;
+            int y;
+        };
+
+        struct Point p = {10, 20}; // x = 10, y = 20
+        ```
+        - Values are assigned by the order of the declation 
+    - **Designated Initializer**:
+        ```
+        struct Point p = {.y = 20, .x = 10};
+        ```
+        - Explicit initilizing with properties of the struct named with dot
+        - Order don't matter
+
+## Aggregate types
+- Types that is consist of multiple members. E.g. array, struct, union.
+
