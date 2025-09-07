@@ -138,3 +138,34 @@ char **str
 ## Aggregate types
 - Types that is consist of multiple members. E.g. array, struct, union.
 
+# C Notes - Sept. 07, 2025
+## When does segmentation fault error occurs?
+- When it tried to access a memory that is not allowed to access.
+```
+Dereferencing NULL pointers
+
+int *ptr = NULL;
+*ptr = 5;  // Segfault - accessing address 0
+
+There are more other examples...
+```
+
+## When to use dot operator(.) or arrow operation(->) in accessing a member of a struct?
+- Struct variable: dot operator
+```
+struct Point {
+    int x;
+    int y;
+};
+
+struct Point p;  // This is a struct variable
+p.x = 10;        // Use dot to access members
+p.y = 20;
+```
+- Pointer to a struct: arrow operator
+```
+struct Point *ptr;  // This is a pointer to a struct
+ptr = &p;           // Point to our struct
+ptr->x = 30;        // Use arrow to access members
+ptr->y = 40;
+```
