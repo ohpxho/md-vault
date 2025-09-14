@@ -7,7 +7,7 @@ SystemVerilog Notes - Aug 21, 2025
 
 ## What is SystemVerilog?
 - Describe circuits
-- A superset of Verilog with better RTL coding contructs and added OOP+assertion+contained randomization
+- A superset of Verilog with better RTL(Register Transfer Level) coding contructs and added OOP+assertion+contained randomization
 - An industry standard for verfication (UVM)
 
 ## What is UVM?
@@ -23,7 +23,7 @@ SystemVerilog Notes - Aug 21, 2025
 - A chip
 - Processes data for one application - hardwired
 - They are unchangeable once manufactrured - unprogrammable
-- Faster that FPGA due to it's optimized to a specific application
+- Faster than FPGA due to it's optimized to for a specific application
 
 `FPGA and ASIC both do not need software`
 
@@ -44,3 +44,21 @@ endmodule
 - `^` is an XOR operation while `&` is an AND operation
 - the parameters in the module (enclosed within parenthesis) are called **ports** 
 
+## Data types and variable
+- **Signed Integers**:
+    - `int` (signed 32-bit integer)
+    - `real` (double-precision floating-point number)
+- `bit vectors` (represents signals with specific width)
+```
+bit [7:0] data; // 8-bit vector
+bit [31:0] addr; // 32-bit vector
+```
+- `array` (store multiple values of the same type)
+```
+int array1 [7:0] ; // 8-element array of signed integers
+int array2 [31:0] ; // 32-element array of signed integers
+```
+- `enum`
+```
+enum {RED, GREEN, BLUE} color; // enumerated type with three values
+```

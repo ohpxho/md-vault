@@ -1,5 +1,8 @@
 # The Elements of Computing System
 
+## Rule in Chip Design
+- Internal pins must have a fan-in of 1 (single source)
+
 ## Chapter 3 - Sequential Logic
 
 ### What is a sequential logic
@@ -15,6 +18,7 @@ The act of remembering something is inherently time-dependent
 ```
 
 ### What is a clock?
+- The passage of time is represented by clock
 - A device that generates oscillating signal(continuous alternating signal without need of inputs)
 - Generate a fixed-length pulse at fixed intervals
 - The elapsed time from high to low signal is a cycle.
@@ -28,11 +32,22 @@ The act of remembering something is inherently time-dependent
 - Changes of value will only apply at the clock edge (rising  or falling, depends on the design), it will not change immediately
 - The value it has will persist until ca new value os explicitly loaded on a clock edge
 
+### What are counters
+- A sequntial chip whose state is an integer number that increments every time unit
+- Typical CPU include `program counter` whose output is interpreted as the address of the instruction that should be executed next 
+
+### Feedback loops
+- This is a close path in a circuit that feeds the output back to the input
+
+### Difference between open and close path circuits
+- **Open path**:  has a break or interruption to prevent the flow of elctricity
+- **Close path**: continuous, without break or interruption 
+
 ## Others 
 
 ### Two types of digital logic
-- Combinational (input based, no memory)  
-- Sequential (has memory) 
+- Combinational (input based, no memory, no time awareness)  
+- Sequential (has memory, time aware) 
 
 ### How are negative numbers represented in binary? 
 - One way is to define it by making the leading 0 into 1
@@ -40,3 +55,7 @@ The act of remembering something is inherently time-dependent
 0001 = 1
 1001 = -1
 ```
+
+`The basic design parameter of such register is its width - the number of bits that it holds - e.g., 16,32, or 64`
+
+- `word` = width of the registers
