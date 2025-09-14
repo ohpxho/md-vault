@@ -59,3 +59,16 @@ The act of remembering something is inherently time-dependent
 `The basic design parameter of such register is its width - the number of bits that it holds - e.g., 16,32, or 64`
 
 - `word` = width of the registers
+
+### Compute the Period of a clock
+- A period is the time for one full clock cycle
+- Formula: T = 1/f, where f = frequency
+```
+What is the period of 2ghz 
+T = 1/f
+f = 2ghz = 2 x 10^9hz
+T = 1/2x10^9 = 0.5 x 10^-9s = 0.5ns
+T = 0.5ns
+
+Each cycle last half a nanosecond
+```
