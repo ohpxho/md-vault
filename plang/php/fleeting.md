@@ -42,3 +42,9 @@ $closure = function () use (&$count) {
   - $php_errormsg (deprecated)
 
 ## Difference between globals and super globals
+
+# PHP Notes - Sept. 15, 2025
+
+## Class Inheritance
+
+- Deriving a class from another class
