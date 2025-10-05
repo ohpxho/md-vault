@@ -206,3 +206,9 @@ union Data {
 };
 ```
 
+# c Notes - Oct. 5, 2025
+
+## When to use -> and . operations?
+- Use `->` when your access to a struct is through a pointer
+- Use `.` when you are trying to access the actual struct implementaton 
+
