@@ -94,7 +94,27 @@ padding = 3 bytes
 - The order of variables could affect the alignment.
 - Aligned automatically by the compiler but can be  ommited 
 
-`A struct base address must be a multiple of its largest alignment requirement`
+```
+A struct base address must be a multiple of its largest alignment requirement
+
+E.g.
+
+struct Example {
+    char a;    // 1-byte aligned
+    int  b;    // 4-byte aligned
+    short c;   // 2-byte aligned
+};
+
+Offset 0:  a (char)    -> 1 byte
+Offset 1–3: padding    -> to align `b` at offset 4
+Offset 4–7: b (int)    -> 4 bytes
+Offset 8–9: c (short)  -> 2 bytes
+Offset 10–11: padding  -> to make struct size multiple of 4
+
+
+You need to add a padding at the end to make the size a multiple of int 
+
+```
 
 - Processor doesn't read 1 byte at a time from memory, it reads **1 word** at a time. e.g. 32bit processor => 4bytes at a time
 
@@ -169,3 +189,26 @@ ptr = &p;           // Point to our struct
 ptr->x = 30;        // Use arrow to access members
 ptr->y = 40;
 ```
+# C Notes - Sept. 28, 2025
+## Identifying the value from a void * variable
+- There are no direct way to know the type since type information is lost on void *
+- You need to manually define the type and cast it 
+
+## UNION
+- This is like a struct, the only difference is that all members share the same memory with the largest element as their size 
+- Let you store different types in the same varible, buto nly one at a time
+
+```
+union Data {
+    int i;
+    float f;
+    char c;
+};
+```
+
+# c Notes - Oct. 5, 2025
+
+## When to use -> and . operations?
+- Use `->` when your access to a struct is through a pointer
+- Use `.` when you are trying to access the actual struct implementaton 
+
