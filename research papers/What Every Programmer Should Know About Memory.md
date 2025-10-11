@@ -13,9 +13,20 @@
 
 ## Northbridge
 
-    - Connected to the CPUs via **Front Side Bus (FSB)**
-    -
+- Connected to the CPUs via **Front Side Bus (FSB)**
 
 ## Southbridge
+
+- I/O bridge
+-
+
+## NUMA
+
+- Non Uniform Memory Access
+- A computer memory architecture used in multi processor systems
+- The system is divided into nodes, each containing one or more CPUs and a dedicated local memory
+- The memory access time depends on the location of the memory relative to the CPU:
+  - **Local memory** (within the same node) -> fastest
+  - **Remote memory** (in another node) -> slower access due to interconnect(data pathway that connects a node to other nodes) latency
 
 <a href="https://people.freebsd.org/~lstewart/articles/cpumemory.pdf">Link of the article</a>
