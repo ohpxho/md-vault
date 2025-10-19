@@ -16,7 +16,6 @@
 ```
 The act of remembering something is inherently time-dependent
 ```
-
 ### What is a clock?
 - The passage of time is represented by clock
 - A device that generates oscillating signal(continuous alternating signal without need of inputs)
