@@ -1,22 +1,26 @@
 # The Elements of Computing System
 
 ## Rule in Chip Design
+
 - Internal pins must have a fan-in of 1 (single source)
 
 ## Chapter 3 - Sequential Logic
 
 ### What is a sequential logic
+
 - A digital logic with memory elements — can store values
 - Implementation involves:
-    - synchronization
-    - clocking
-    - feedback loops
+  - synchronization
+  - clocking
+  - feedback loops
 - implementation needs a clock signal (in synchronous design)
 
 ```
 The act of remembering something is inherently time-dependent
 ```
+
 ### What is a clock?
+
 - The passage of time is represented by clock
 - A device that generates oscillating signal(continuous alternating signal without need of inputs)
 - Generate a fixed-length pulse at fixed intervals
@@ -26,30 +30,37 @@ The act of remembering something is inherently time-dependent
 - measured by hz(hertz) e.g 2ghz => 2 billion pulse per second
 
 ### What is a flip-flop
+
 - The most elementary sequential element
 - It stores 1 bit of data
-- Changes of value will only apply at the clock edge (rising  or falling, depends on the design), it will not change immediately
+- Changes of value will only apply at the clock edge (rising or falling, depends on the design), it will not change immediately
 - The value it has will persist until ca new value os explicitly loaded on a clock edge
 
 ### What are counters
+
 - A sequntial chip whose state is an integer number that increments every time unit
-- Typical CPU include `program counter` whose output is interpreted as the address of the instruction that should be executed next 
+- Typical CPU include `program counter` whose output is interpreted as the address of the instruction that should be executed next
 
 ### Feedback loops
+
 - This is a close path in a circuit that feeds the output back to the input
 
 ### Difference between open and close path circuits
-- **Open path**:  has a break or interruption to prevent the flow of elctricity
-- **Close path**: continuous, without break or interruption 
 
-## Others 
+- **Open path**: has a break or interruption to prevent the flow of elctricity
+- **Close path**: continuous, without break or interruption
+
+## Others
 
 ### Two types of digital logic
-- Combinational (input based, no memory, no time awareness)  
-- Sequential (has memory, time aware) 
 
-### How are negative numbers represented in binary? 
+- Combinational (input based, no memory, no time awareness)
+- Sequential (has memory, time aware)
+
+### How are negative numbers represented in binary?
+
 - One way is to define it by making the leading 0 into 1
+
 ```
 0001 = 1
 1001 = -1
@@ -60,10 +71,12 @@ The act of remembering something is inherently time-dependent
 - `word` = width of the registers
 
 ### Compute the Period of a clock
+
 - A period is the time for one full clock cycle
 - Formula: T = 1/f, where f = frequency
+
 ```
-What is the period of 2ghz 
+What is the period of 2ghz
 T = 1/f
 f = 2ghz = 2 x 10^9hz
 T = 1/2x10^9 = 0.5 x 10^-9s = 0.5ns
