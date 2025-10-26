@@ -14,6 +14,7 @@
 **Feedback:** ⚠️ Partially correct but incomplete (missing third difference and some inaccuracies)
 
 **Corrections:**
+
 1. **Memory**: Sequential has memory elements, combinational doesn't ✅
 2. **Time awareness**: Sequential is time-dependent, combinational is not
 3. **Clock dependency**: Sequential requires clock signals, combinational doesn't
@@ -31,7 +32,8 @@ P = .3125 ns
 
 **Feedback:** ❌ Calculation error in the formula application
 
-**Correction:** 
+**Correction:**
+
 - T = 1/f where f = 3.2 × 10⁹ Hz
 - T = 1/(3.2 × 10⁹) = 0.3125 × 10⁻⁹ = 0.3125 ns
 
@@ -70,6 +72,7 @@ The program counter is resposible at pointing to the next instruction to execute
 **Feedback:** ✅ Correct concept!
 
 **Minor Corrections:**
+
 - Spelling: "resposible" → "responsible"
 - Grammar: "responsible **for** pointing" not "responsible at pointing"
 
@@ -107,7 +110,8 @@ For sign-bit method, to identify negative sign is to have the leftmost bit to be
 
 **Feedback:** ✅ Correct!
 
-**Verification:** 
+**Verification:**
+
 - +5 in binary: 101
 - Sign-bit method: 1 (negative) + 101 (magnitude) = 1101
 - Perfect!
@@ -117,6 +121,7 @@ For sign-bit method, to identify negative sign is to have the leftmost bit to be
 ---
 
 ## Overall Assessment:
+
 - **Strengths:** Program counter concept, word size understanding, sign-bit binary representation
 - **Areas to improve:** Clock period calculations (parentheses in formulas), flip-flop timing behavior
 - **Missing knowledge:** Fan-in rules - review your chip design notes!
