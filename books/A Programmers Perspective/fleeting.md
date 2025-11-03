@@ -128,3 +128,5 @@ N = Number of processors
 - **Insight:** The speedup even with infinite processors are limited to the speed of the sequential portion
 
 ### Concurrency and Parallelism
+
+## Chapter 2 - Representing and Manipulating Information
