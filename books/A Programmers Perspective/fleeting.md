@@ -130,3 +130,23 @@ N = Number of processors
 ### Concurrency and Parallelism
 
 ## Chapter 2 - Representing and Manipulating Information
+
+### Addressing And Byte Ordering
+
+- `Big endian`: most significant byte first
+
+```
+0x100 0x101 0x102 0x103
+-----------------------
+| 01 | 23  | 45  | 67 |
+```
+
+- `Little endian`: least significant byte first
+
+```
+0x100 0x101 0x102 0x103
+-----------------------
+| 67 | 45  | 23  | 01 |
+```
+
+- `Bi-Endian`: can be configured to be either big or little endian
