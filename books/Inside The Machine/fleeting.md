@@ -2,7 +2,7 @@
 
 ## Basic Computing Concepts - Chapter 1
 
-`In a nutshell, a computer is a device that reads, modifies, and writes sequences of nkmbers. These three function-read, modify, and write- are the three most fundamental function that a computer performs, and all of the machines components are designed to aid in carrying them out.`
+`In a nutshell, a computer is a device that reads, modifies, and writes sequences of numbers. These three function-read, modify, and write- are the three most fundamental function that a computer performs, and all of the machines components are designed to aid in carrying them out.`
 
 ### 3 key components of a computer
 
@@ -49,6 +49,6 @@
 ### General purpose registers
 
 - They are not fixed to a spearial and fixed role
-- Can be used by a wide variety of stask such as: holding operands, storgin intermediate results, acting as counters or temporary varialbles, keeping memory address, and etc.
+- Can be used by a wide variety of stask such as: holding operands, storing intermediate results, acting as counters or temporary varialbles, keeping memory address, and etc.
 
 ## The mechanics of Program Execution - Chapter 2
