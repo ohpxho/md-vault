@@ -7,19 +7,133 @@ Here are two sets of questions based on the provided notes for Chapter 1 - Style
 ## Set 1: Foundation-Building Questions
 
 1.  According to the notes, what is the single most important criterion for judging good programming style?
+
+Answer:
+
+```
+Ease of reading, all the styles mentioned are considered to improve the readability of the code
+```
+
 2.  List three essential attributes a good name in programming should possess.
+
+Answer:
+
+```
+1. Consistent
+2. Accurate
+3. Pronouncaeble
+```
+
 3.  When is it appropriate to use shorter, less verbose names for variables, according to the notes?
+
+Answer:
+
+```
+For shorter, less verbose names are proper for local variables. Too long can cause loss of clarity.
+```
+
 4.  Explain why naming elements like `queueCapacity` within a `UserQueue` class is considered redundant. Provide an example of how this could be improved without losing clarity.
+
+Answer:
+
+```
+since the queueCapacity refers already to the queue, doing UserQueue.queueCapacity feels redunadant and unnecessary. By changing it into `capacity` reading UserQueue.capacity is more natural.
+```
+
 5.  What kind of words are recommended for naming functions that perform an action? Give an example of such a function name.
+
+Answer:
+
+```
+For naming functions, you should follow verb + noun format. Since it is a function that perform an action a verb is appropriate to make its intentions clear
+```
+
 6.  How should the name of a function clearly indicate that it returns a boolean value? Provide an example.
+
+Answer:
+
+```
+For boolean function, you can prefix the name with `is`. This helps to indicate that the function return a boolean value
+```
+
 7.  Why is maintaining a consistent naming format (e.g., `isLoggedIn` vs. `loggedIn`) across a codebase crucial?
+
+Answer:
+
+```
+It eases the readability of the code, with consistent format you can relate variables or functions easily.
+```
+
 8.  How does proper indentation contribute to the "ease of understanding" a program's structure?
+
+Answer:
+
+```
+Indentation helps by identifying scopes.
+
+if(x){
+x += 1;
+y = x;
+}
+
+is harder to read than
+
+if(x) {
+    x += 1
+    y = x;
+}
+
+speacially if you have larger codebase.
+```
+
 9.  Why is it advised to write conditional expressions in their "natural or positive state" rather than relying on negations?
+
+Answer:
+
+```
+Because negations is harder to read that its positive form due to it increases cognitive load and the two-step mental process.
+```
+
 10. In what situations should parentheses be explicitly used in expressions, even if operator precedence rules might suggest they are optional?
+
+Answer:
+
+```
+For long operations, having parenthesis to group related operations
+```
+
 11. What strategy is recommended for handling operations that are complex or involve multiple steps within a single expression?
+
+Answer:
+
+```
+This can be done by chaining if-else statements
+```
+
 12. Briefly define "side effects" in the context of programming and explain why programmers should exercise caution when dealing with them.
+
+Answer:
+
+```
+Side effects are unintended processese that is being executed out of the scope of your program. For example, handling IO operations or any external libraries may return unexpected results or affect that can impact the program.
+```
+
 13. What is an "idiom" in programming style, and how do established idioms benefit a codebase?
+
+Answer:
+
+```
+Idioms are conventions used by experience programmers that is considered good practice in the programming language
+```
+
 14. Describe a scenario where an `else-if` chain is the more appropriate choice for handling multi-way decisions compared to a `switch-case` statement.
+
+Answer:
+
+```
+
+```
+
 15. Conversely, describe a situation where a `switch-case` statement is generally preferred over an `else-if` chain for multi-way decisions.
 16. What is the primary recommendation regarding the use of function macros?
 17. If function macros _must_ be used, what two specific parenthesization rules are critical to follow for their body and arguments?
