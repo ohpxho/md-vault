@@ -1,6 +1,6 @@
 # OS Notes - Aug 24, 2025
 
-## What is Non-preemptive scheduling?
+## What is Non-preemptive sjheduling?
 
 - An approach in CPU scheduling
 - One process has the hold of the CPU, and cannot be interrupted until it voluntarily release the control

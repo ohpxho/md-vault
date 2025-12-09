@@ -19,7 +19,7 @@ Sources: https://www.youtube.com/watch?v=ioJkA7Mw2-U
 
 ### Why Stack grows downwards while heap grows upwards?
 
-- A simple answer is that, so they don't collide with each other
+- A simple answer is that - so they don't collide with each other
 
 ### Memory Layout
 
