@@ -15,15 +15,32 @@
 - How does CFG supports structural languages?
 - What hierarchy in Chomsky does CFG falls under?
 
-====
+## Left Recursion
+
+- What is left recursion?
+- How can you say that the derivation is left recursive?
+- Why does left recursion pose a significant problem for recursive descent? And, what is the problem?
+- How does left recursion can be resolved?
+
+## Parsing Techniques
 
 - What are the two fundamental approach of parsings CFG?
 - What is the difference between LL(1) and LR(1)?
-- How does LL(1) or recursive descent parse CFG?
-- How does LR(1) parse CFG?
-- What is left recursion?
 - What is the difference between direct and indirect left recursion? And, why is the distinction important?
-- Why does left recursion pose a significant problem for recursive descent? And, what is the problem?
-- How does left recursion can be resolved?
-- Why does LR(1) is more powerful than LL(1)?
 - What is the importance of CFG in language design?
+- How can you identify ambigutieties in a grammar?
+
+## LL Grammars
+
+- How does LL(1) or recursive descent parse CFG?
+- How to say that a grammar is LL(1)? And, what are its properties?
+- Why does we need to eliminate left recursion when using LL(1) grammar?
+- How will you construct an LL(1) grammar?
+- How will you eliminate common left prefixes? And, why?
+- What is a lookahead token?
+- How many lookaheads is needed? Can you increase it? What are the implications of increasing it?
+
+## LR Grammars
+
+- How does LR(1) parse CFG?
+- Why does LR(1) is more powerful than LL(1)?

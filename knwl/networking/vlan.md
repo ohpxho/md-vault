@@ -7,6 +7,7 @@
 - Why VLAN is needed?
 - What is the primary IEEE standard for VLANs?
 - What layer does VLAN operates in? And, why?
+- What is the purpose of trunking?
 
 ### Source:
 
